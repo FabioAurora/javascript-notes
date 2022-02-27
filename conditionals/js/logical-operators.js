@@ -34,3 +34,19 @@ let lastName ='';
 let nickName = 'SuperCode';
 console.log(firstName || lastName || nickName || 'Anonymous');// SuperCode
 
+
+/* *********************************************************************************** */
+// AND (&&) logical operator:
+// In classical programming, AND returns true if both operands are truthy and false otherwise:
+
+/* alert( true && true );   // true
+alert( false && true );  // false
+alert( true && false );  // false
+alert( false && false ); // false */
+
+let hora = 13;
+let minutes = 55;
+
+if(hora == 13 && minutes == 55) {
+    console.log('the time is 13:55')
+}
