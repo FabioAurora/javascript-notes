@@ -50,3 +50,36 @@ let minutes = 55;
 if(hora == 13 && minutes == 55) {
     console.log('the time is 13:55')
 }
+/* *************************************************************************************** */
+// !(NOT)
+/* The operator accepts a single argument and does the following:
+
+Converts the operand to boolean type: true/false.
+Returns the inverse value. */
+/* 
+alert( !true ); // false
+alert( !0 ); // true
+A double NOT !! is sometimes used for converting a value to boolean type:
+
+alert( !!"non-empty string" ); // true
+alert( !!null ); // false */
+
+//Exercise
+
+
+let login = prompt("who's there?");
+let usr = "Admin";
+let pwd = 'theMaster';
+if(login == false || login == null) {
+    alert('canceled')
+}else if (login != usr) {
+    alert('I dont know you')
+}else {
+    login = prompt('password?')
+    if(login == null || login == false) {
+        alert('canceled')
+    }else {
+        login == pwd ? alert('Welcome') : alert('wrong password')
+
+    }
+}
