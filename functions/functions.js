@@ -75,9 +75,9 @@ console.log(madeAnotherString);
 // DEFAULT PARAMETERS:
 //If you're writing a function and want to support optional parameters, you can specify default values by adding = after the name of the parameter, followed by the default value:
 
-function hello(name = "Chris") {
+function hello(name = "Chris") {// parameter + '=' + value
   console.log(`Hello ${name}!`);
 }
 
-hello("Ari"); // Hello Ari!
-hello(); // Hello Chris!
+hello("Ari"); // Hello Ari! --> if we use parameter
+hello(); // Hello Chris! --> default parameter if you dont specify one.
