@@ -97,3 +97,45 @@ for (let i = 1; i <= answer; i++) {
     console.log('Buzz')
   }else console.log(i)
 } */
+
+// 7 -----------------------------------------------
+
+/* const dolphinsScore = (96 + 108 + 89) / 3;
+const koalasScore =  (88 + 91 + 110) / 3;
+
+if (dolphinsScore > koalasScore) {
+  console.log(`Dolphins won the 🏆 with an average score of ${dolphinsScore.toFixed(1)}`);
+}else if (koalasScore > dolphinsScore){
+  console.log(`Koalas won the 🏆 with an average score of ${koalasScore.toFixed(1)}`);
+} else if (dolphinsScore === koalasScore) {
+  console.log(`Both win the trophy`)
+} */
+
+//bonus 1
+/* const dolphinsScore = (97 + 112 + 101) / 3;
+const koalasScore =  (109 + 95 + 123) / 3;
+console.log(`Dolphins(${dolphinsScore.toFixed(1)}) - Koalas(${koalasScore.toFixed(1)})`)
+
+if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
+  console.log(`Dolphins won the 🏆 with an average score of ${dolphinsScore.toFixed(1)}`);
+}else if (koalasScore > dolphinsScore && koalasScore >= 100){
+  console.log(`Koalas won the 🏆 with an average score of ${koalasScore.toFixed(1)}`);
+} else if (dolphinsScore === koalasScore) {
+  console.log(`Both win the trophy`)
+} */
+
+//BONUS 2
+
+const dolphinsScore = (97 + 112 + 98) / 3;
+const koalasScore =  (109 + 95 + 103) / 3;
+console.log(`Dolphins(${dolphinsScore.toFixed(1)}) - Koalas(${koalasScore.toFixed(1)})`)
+
+if (dolphinsScore > koalasScore && dolphinsScore >= 100) {
+  console.log(`Dolphins won the 🏆 with an average score of ${dolphinsScore.toFixed(1)}`);
+}else if (koalasScore > dolphinsScore && koalasScore >= 100){
+  console.log(`Koalas won the 🏆 with an average score of ${koalasScore.toFixed(1)}`);
+} else if (dolphinsScore === koalasScore && dolphinsScore >= 100 && koalasScore >= 100) {
+  console.log(`Both win the trophy`)
+}else {
+  console.log(`No one wins the trophy`)
+}
