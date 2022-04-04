@@ -27,5 +27,21 @@ const upperCats = cats.map(toUpper);
 console.log(upperCats); // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
 
 // You can use filter() to test each item in a collection, and create a new collection
-// containing only item that match:
+// containing only items that match:
+// Testing if the item starts with the letter "L"
+function lCat(cat) {
+  return cat.startsWith("L");
+}
 
+const filtered = cats.filter(lCat); // the result is an Array containing only cats whose
+// names start with "L".
+
+console.log(filtered); // [ "Leopard", "Lion" ]
+
+//NOTE NOTE NOTE NOTE NOTE NOTE NOTE:
+// map() and filter() are both often used with function expressions
+// rewriting the example above tom be more compact:
+
+const filteredCats = cats.filter((cat) => cat.startsWith("T"));
+
+console.log(filteredCats);
