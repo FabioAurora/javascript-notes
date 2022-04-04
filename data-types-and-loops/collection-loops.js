@@ -16,11 +16,16 @@ for (const cat of cats) {
 
 // map() and filter()
 
-// You can use map() to do something to each item in a collection and create a new collection containing the changed items:
+// You can use map() to do something to each item in a collection and create a new
+// collection containing the changed items:
 function toUpper(string) {
   return string.toUpperCase();
 }
 
 const upperCats = cats.map(toUpper);
 
-console.log(upperCats);
+console.log(upperCats); // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
+
+// You can use filter() to test each item in a collection, and create a new collection
+// containing only item that match:
+
