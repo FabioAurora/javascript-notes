@@ -34,4 +34,8 @@ fruits.push('Lemon'); // Adds "Lemon" to fruits
 
 // The difference between Arrays and Objects:
   // In JavaScript, arrays use numbered indexes.
+<<<<<<< HEAD:data-types/arrays.js
   // In JavaScript, objects use named indexes.
+=======
+  // In JavaScript, objects use named indexes.
+>>>>>>> 6967617422c84e134799236feb3951666a97b04c:data-types-and-loops/arrays.js
