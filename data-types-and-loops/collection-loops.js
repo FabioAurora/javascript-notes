@@ -26,6 +26,7 @@ const upperCats = cats.map(toUpper);
 
 console.log(upperCats); // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
 
+
 // You can use filter() to test each item in a collection, and create a new collection
 // containing only items that match:
 // Testing if the item starts with the letter "L"
