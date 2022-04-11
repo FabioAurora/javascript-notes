@@ -58,3 +58,44 @@ for (let i = 0; i < gatos.length; i++) {
   }
 }
 console.log(myFavoriteCats);
+
+/* -----------****------------------ */
+
+// create a list of contacts
+//reset the input value to empty
+//focus on the input after that
+//reset the paragraph to empty
+// loop thru the contact list
+
+
+const contacts = [
+  "Fabio:0768456789",
+  "Tamires:071128364",
+  "Arthur:0767201506",
+  "Joao:44+2983746636",
+  "Marco:+18734467644",
+  "Tiago:295642072",
+];
+
+const para = document.querySelector("#list");
+const input = document.querySelector("#search");
+const btn = document.querySelector("#contactBtn");
+
+btn.addEventListener("click", () => {
+  const searchName = input.value.toLowerCase();
+  input.value = "";
+  input.focus();
+  para.textContent = "";
+
+  for (const contact of contacts) {
+    const splitContact = contact.split(":");
+
+    if (splitContact[0].toLowerCase() === searchName) {
+      para.textContent = `${splitContact[0]}'s number is ${splitContact[1]}.`;
+      break;
+    }
+  }
+  if (para.textContent === "") {
+    para.textContent = "Contact not found";
+  }
+});
